@@ -26,18 +26,34 @@ import statistics
 
 # 3 uzd.
 
-randSk1 = random.randint(0, 25)
-randSk2 = random.randint(0, 25)
-randSk3 = random.randint(0, 25)
+# randSk1 = random.randint(0, 25)
+# randSk2 = random.randint(0, 25)
+# randSk3 = random.randint(0, 25)
+#
+# print(randSk1)
+# print(randSk2)
+# print(randSk3)
+#
+# # print(statistics.median([randSk1, randSk2, randSk3]))
+#
+# if (randSk1 > randSk2 and randSk1 < randSk3) or (randSk1 > randSk3 and randSk1 < randSk2):
+#     print("skaičius 1")
+# if (randSk2 > randSk1 and randSk2 < randSk3) or (randSk2 > randSk3 and randSk2 < randSk1):
+#     print('Skaičius 2')
+# else: print('Skaičius 3')
 
-print(randSk1)
-print(randSk2)
-print(randSk3)
+# 4 uzd.
 
-# print(statistics.median([randSk1, randSk2, randSk3]))
+a = random.randint(1, 10)
+b = random.randint(1, 10)
+c = random.randint(1, 10)
 
-if (randSk1 > randSk2 and randSk1 < randSk3) or (randSk1 > randSk3 and randSk1 < randSk2):
-    print("skaičius 1")
-if (randSk2 > randSk1 and randSk2 < randSk3) or (randSk2 > randSk3 and randSk2 < randSk1):
-    print('Skaičius 2')
-else: print('Skaičius 3')
+print('a kraštinė:', a)
+print('b kraštinė:', b)
+print('c kraštinė:', c)
+
+if a + b > c and a + c > b and b + c > a:
+    print('Susidaro trikampis')
+else: print("Nesusidaro trikampis")
+
+# veikia
