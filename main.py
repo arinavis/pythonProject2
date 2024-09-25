@@ -59,49 +59,83 @@ import statistics
 # veikia
 
 # 5 uzd.
-num1 = random.randint(0,2)
-num2 = random.randint(0,2)
-num3 = random.randint(0,2)
-num4 = random.randint(0,2)
+# num1 = random.randint(0,2)
+# num2 = random.randint(0,2)
+# num3 = random.randint(0,2)
+# num4 = random.randint(0,2)
+#
+# print('Pirmas kintamasis:', num1)
+# print('Antras kintamasis:', num2)
+# print('Trečias kintamasis:', num3)
+# print('Ketvirtas kintamasis:', num4)
+#
+# count0 = 0
+# count1 = 0
+# count2 = 0
+#
+# if num1 == 0:
+#     count0 += 1
+# if num2 == 0:
+#     count0 += 1
+# if num3 == 0:
+#     count0 += 1
+# if num4 == 0:
+#     count0 += 1
+#
+# if num1 == 1:
+#     count1 += 1
+# if num2 == 1:
+#     count1 += 1
+# if num3 == 1:
+#     count1 += 1
+# if num4 == 1:
+#     count1 += 1
+#
+# if num1 == 2:
+#     count2 += 1
+# if num2 == 2:
+#     count2 += 1
+# if num3 == 2:
+#     count2 += 1
+# if num4 == 2:
+#     count2 += 1
+#
+# print('Nuliai: ', count0)
+# print('Vienetai: ', count1)
+# print('Dvejetai: ', count2)
+#
+# # veikia
 
-print('Pirmas kintamasis:', num1)
-print('Antras kintamasis:', num2)
-print('Trečias kintamasis:', num3)
-print('Ketvirtas kintamasis:', num4)
+# 6 uzd.
 
-count0 = 0
-count1 = 0
-count2 = 0
+ranNum1 = random.randint(-10, 10)
+ranNum2 = random.randint(-10, 10)
+ranNum3 = random.randint(-10, 10)
 
-if num1 == 0:
-    count0 += 1
-if num2 == 0:
-    count0 += 1
-if num3 == 0:
-    count0 += 1
-if num4 == 0:
-    count0 += 1
+print('Random number one =', ranNum1)
+print('Random number two =', ranNum2)
+print('Random number three =', ranNum3)
 
-if num1 == 1:
-    count1 += 1
-if num2 == 1:
-    count1 += 1
-if num3 == 1:
-    count1 += 1
-if num4 == 1:
-    count1 += 1
 
-if num1 == 2:
-    count2 += 1
-if num2 == 2:
-    count2 += 1
-if num3 == 2:
-    count2 += 1
-if num4 == 2:
-    count2 += 1
+if ranNum1 < 0:
+    print([ranNum1])
+if ranNum1 == 0:
+    print(f'({ranNum1})')
+if ranNum1 > 0:
+    print({ranNum1})
 
-print('Nuliai: ', count0)
-print('Vienetai: ', count1)
-print('Dvejetai: ', count2)
+if ranNum2 < 0:
+    print([ranNum2])
+if ranNum2 == 0:
+    print(f'({ranNum2})')
+if ranNum2 > 0:
+    print({ranNum2})
 
-# veikia
+if ranNum3 < 0:
+    print([ranNum3])
+if ranNum3 == 0:
+    print(f'({ranNum3})')
+if ranNum3 > 0:
+    print({ranNum3})
+
+# Veikia
