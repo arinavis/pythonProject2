@@ -44,16 +44,64 @@ import statistics
 
 # 4 uzd.
 
-a = random.randint(1, 10)
-b = random.randint(1, 10)
-c = random.randint(1, 10)
+# a = random.randint(1, 10)
+# b = random.randint(1, 10)
+# c = random.randint(1, 10)
+#
+# print('a kraštinė:', a)
+# print('b kraštinė:', b)
+# print('c kraštinė:', c)
+#
+# if a + b > c and a + c > b and b + c > a:
+#     print('Susidaro trikampis')
+# else: print("Nesusidaro trikampis")
 
-print('a kraštinė:', a)
-print('b kraštinė:', b)
-print('c kraštinė:', c)
+# veikia
 
-if a + b > c and a + c > b and b + c > a:
-    print('Susidaro trikampis')
-else: print("Nesusidaro trikampis")
+# 5 uzd.
+num1 = random.randint(0,2)
+num2 = random.randint(0,2)
+num3 = random.randint(0,2)
+num4 = random.randint(0,2)
+
+print('Pirmas kintamasis:', num1)
+print('Antras kintamasis:', num2)
+print('Trečias kintamasis:', num3)
+print('Ketvirtas kintamasis:', num4)
+
+count0 = 0
+count1 = 0
+count2 = 0
+
+if num1 == 0:
+    count0 += 1
+if num2 == 0:
+    count0 += 1
+if num3 == 0:
+    count0 += 1
+if num4 == 0:
+    count0 += 1
+
+if num1 == 1:
+    count1 += 1
+if num2 == 1:
+    count1 += 1
+if num3 == 1:
+    count1 += 1
+if num4 == 1:
+    count1 += 1
+
+if num1 == 2:
+    count2 += 1
+if num2 == 2:
+    count2 += 1
+if num3 == 2:
+    count2 += 1
+if num4 == 2:
+    count2 += 1
+
+print('Nuliai: ', count0)
+print('Vienetai: ', count1)
+print('Dvejetai: ', count2)
 
 # veikia
