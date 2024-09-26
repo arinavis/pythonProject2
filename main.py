@@ -142,16 +142,32 @@ import statistics
 
 # 7 uzd
 
-zvKiekis = random.randint(5, 3000)
-# zvKiekis = 2200
-zvKaina = 1
-print('Žvakių kiekis:', zvKiekis)
-if 1000 < zvKiekis <= 2000:
-    print('Kaina su 3% nuolaida:', round(zvKiekis * zvKaina * 0.97, 2), 'eurai')
-elif zvKiekis > 2000:
-    print('Kaina su 4 % nuolaida:', round(zvKiekis * zvKaina / 0.96, 2), 'eurai')
-else:
-    print('Kaina:', zvKiekis * zvKaina, 'eurai')
+# zvKiekis = random.randint(5, 3000)
+# # zvKiekis = 2200
+# zvKaina = 1
+# print('Žvakių kiekis:', zvKiekis)
+# if 1000 < zvKiekis <= 2000:
+#     print('Kaina su 3% nuolaida:', round(zvKiekis * zvKaina * 0.97, 2), 'eurai')
+# elif zvKiekis > 2000:
+#     print('Kaina su 4 % nuolaida:', round(zvKiekis * zvKaina / 0.96, 2), 'eurai')
+# else:
+#     print('Kaina:', zvKiekis * zvKaina, 'eurai')
+
+# Veikia
+
+# 8 uzd
+sk1 = random.randint(0, 100)
+sk2 = random.randint(0, 100)
+sk3 = random.randint(0, 100)
+
+print(f'random skaičiai: {sk1} {sk2} {sk3}')
+print('Aritmetinis vidurkis:', round((sk1 + sk2 + sk3) / 3))
+# sk1 = 11
+# sk2 = 80
+# sk3 = 30
+if 10 < sk1 < 90 and 10 < sk2 < 90 and 10 < sk3 <90:
+    print('Aritmetinis vidurkis [10, 90]:', round((sk1 + sk2 + sk3) / 3))
+else: print('Netinkamos reikšmės')
 
 # Veikia
 
