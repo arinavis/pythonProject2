@@ -156,18 +156,56 @@ import statistics
 # Veikia
 
 # 8 uzd
-sk1 = random.randint(0, 100)
-sk2 = random.randint(0, 100)
-sk3 = random.randint(0, 100)
-
-print(f'random skaičiai: {sk1} {sk2} {sk3}')
-print('Aritmetinis vidurkis:', round((sk1 + sk2 + sk3) / 3))
-# sk1 = 11
-# sk2 = 80
-# sk3 = 30
-if 10 < sk1 < 90 and 10 < sk2 < 90 and 10 < sk3 <90:
-    print('Aritmetinis vidurkis [10, 90]:', round((sk1 + sk2 + sk3) / 3))
-else: print('Netinkamos reikšmės')
+# sk1 = random.randint(0, 100)
+# sk2 = random.randint(0, 100)
+# sk3 = random.randint(0, 100)
+#
+# print(f'random skaičiai: {sk1} {sk2} {sk3}')
+# print('Aritmetinis vidurkis:', round((sk1 + sk2 + sk3) / 3))
+# # sk1 = 11
+# # sk2 = 80
+# # sk3 = 30
+# if 10 < sk1 < 90 and 10 < sk2 < 90 and 10 < sk3 <90:
+#     print('Aritmetinis vidurkis [10, 90]:', round((sk1 + sk2 + sk3) / 3))
+# else: print('Netinkamos reikšmės')
 
 # Veikia
 
+# 9 uzd
+val = random.randint(00, 23)
+min = random.randint(00, 59)
+sek = random.randint(00, 59)
+papSk = random.randint(0, 300)
+print(f'Random skaičiai: {val}, {min}, {sek}, papildomas skaičius: {papSk}')
+# print('Laikas:', ('0' + str(val))[-2:] + ':' + ('0' + str(min))[-2:] + ':' + ('0' + str(sek))[-2:])
+print(f'Laikas: {val}:{min}:{sek}')
+
+# nepavyko
+
+# Sugeneruojame atsitiktines valandas, minutes ir sekundes
+valandos = random.randint(0, 23)   # Valandos nuo 0 iki 23
+minutes = random.randint(0, 59)    # Minutės nuo 0 iki 59
+sekundes = random.randint(0, 59)   # Sekundės nuo 0 iki 59
+
+# Sugeneruojame atsitiktinį papildomų sekundžių skaičių
+papildomos_sekundes = random.randint(0, 300)
+
+# Atspausdiname laikrodį prieš pridėjimą
+print(f"Laikas prieš pridėjimą: {valandos:02d}:{minutes:02d}:{sekundes:02d}")
+print(f"Pridedamos sekundės: {papildomos_sekundes}")
+
+# Apskaičiuojame bendrą sekundžių skaičių pradinėje būsenoje
+bendros_sekundes = valandos * 3600 + minutes * 60 + sekundes
+
+# Pridedame papildomas sekundes
+bendros_sekundes += papildomos_sekundes
+
+# Paverčiame bendras sekundes atgal į valandas, minutes ir sekundes
+naujos_valandos = (bendros_sekundes // 3600) % 24  # Moduliuojame 24, kad nebūtų daugiau nei 23 valandos
+naujos_minutes = (bendros_sekundes % 3600) // 60   # Minutės
+naujos_sekundes = bendros_sekundes % 60            # Sekundės
+
+# Atspausdiname laikrodį po sekundžių pridėjimo
+print(f"Laikas po pridėjimo: {naujos_valandos:02d}:{naujos_minutes:02d}:{naujos_sekundes:02d}")
+
+# chatGPT
