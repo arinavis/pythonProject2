@@ -108,34 +108,50 @@ import statistics
 
 # 6 uzd.
 
-ranNum1 = random.randint(-10, 10)
-ranNum2 = random.randint(-10, 10)
-ranNum3 = random.randint(-10, 10)
-
-print('Random number one =', ranNum1)
-print('Random number two =', ranNum2)
-print('Random number three =', ranNum3)
-
-
-if ranNum1 < 0:
-    print([ranNum1])
-if ranNum1 == 0:
-    print(f'({ranNum1})')
-if ranNum1 > 0:
-    print({ranNum1})
-
-if ranNum2 < 0:
-    print([ranNum2])
-if ranNum2 == 0:
-    print(f'({ranNum2})')
-if ranNum2 > 0:
-    print({ranNum2})
-
-if ranNum3 < 0:
-    print([ranNum3])
-if ranNum3 == 0:
-    print(f'({ranNum3})')
-if ranNum3 > 0:
-    print({ranNum3})
+# ranNum1 = random.randint(-10, 10)
+# ranNum2 = random.randint(-10, 10)
+# ranNum3 = random.randint(-10, 10)
+#
+# print('Random number one =', ranNum1)
+# print('Random number two =', ranNum2)
+# print('Random number three =', ranNum3)
+#
+#
+# if ranNum1 < 0:
+#     print([ranNum1])
+# if ranNum1 == 0:
+#     print(f'({ranNum1})')
+# if ranNum1 > 0:
+#     print({ranNum1})
+#
+# if ranNum2 < 0:
+#     print([ranNum2])
+# if ranNum2 == 0:
+#     print(f'({ranNum2})')
+# if ranNum2 > 0:
+#     print({ranNum2})
+#
+# if ranNum3 < 0:
+#     print([ranNum3])
+# if ranNum3 == 0:
+#     print(f'({ranNum3})')
+# if ranNum3 > 0:
+#     print({ranNum3})
 
 # Veikia
+
+# 7 uzd
+
+zvKiekis = random.randint(5, 3000)
+# zvKiekis = 2200
+zvKaina = 1
+print('Žvakių kiekis:', zvKiekis)
+if 1000 < zvKiekis <= 2000:
+    print('Kaina su 3% nuolaida:', round(zvKiekis * zvKaina * 0.97, 2), 'eurai')
+elif zvKiekis > 2000:
+    print('Kaina su 4 % nuolaida:', round(zvKiekis * zvKaina / 0.96, 2), 'eurai')
+else:
+    print('Kaina:', zvKiekis * zvKaina, 'eurai')
+
+# Veikia
+
